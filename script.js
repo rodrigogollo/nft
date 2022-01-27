@@ -5,6 +5,7 @@ canvas.height = window.innerHeight - 100;
 var context = canvas.getContext("2d");
 
 function drawLinesRandom (index=0, lines=10) {
+    canvas.style.background = HSLToRGB(Math.floor(Math.random() * 360),  70, 50);
     if(index == 0) context.clearRect(0, 0, canvas.width, canvas.height);
     if(index >= lines) {
         return;
@@ -21,7 +22,7 @@ function drawLinesRandom (index=0, lines=10) {
         context.lineTo(random3, random4);
     
         //random line width
-        var randomLineWidth = Math.floor(Math.random() * 100)
+        var randomLineWidth = Math.floor(Math.random() * 0.0001)
         context.lineWidth = randomLineWidth;
         
         //random line color
