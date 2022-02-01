@@ -97,3 +97,25 @@ function run() {
     //drawJointedLines(100, 100, 0, 50);
     drawCircle();
 }
+
+/** P5js 
+ * 
+ * 
+ * function setup() {
+  createCanvas(400, 400);
+}
+
+function draw() {
+  background(220);
+  ellipse(50,50,80,80);
+  //triangulo
+  line(50, 10, 20, 75)
+  line(50, 10, 80, 75)
+  line(20, 75, 80, 75)
+  //triangulo invertido
+  line(15, 30, 85, 30)
+  line(15, 30, 50, 90)
+  line(85, 30, 50, 90)
+}
+ * 
+ */
